@@ -6,7 +6,7 @@ The focus is on clean architecture, modern Swift development, performance optimi
 
 ## About Me
 
-Senior iOS Developer with 10+ years of professional experience designing, developing, and maintaining high-quality iOS applications across Finance, Healthcare, and B2B domains.
+Senior iOS Developer with 8+ years of professional experience designing, developing, and maintaining high-quality iOS applications across Finance, Healthcare, and B2B domains.
 
 Experienced in working with global teams, contributing to architecture decisions, optimizing performance, and delivering production-ready applications used at scale.
 
@@ -93,17 +93,17 @@ A modular demo comparing MVVM and Clean Architecture, with a testable layering a
 **Tech Stack:** Swift, MVVM, Clean Architecture, SPM
 🔗 Repository: [`ios-architecture-patterns`](./ios-architecture-patterns)
 
-### 5️⃣ SwiftUI Components Library
-Custom, reusable SwiftUI components, animations, and a layout system built from scratch.
+### 5️⃣ SwiftUI &amp; UIKit Components Library
+The same reusable UI components — a custom button, card view, and animated loading indicator — built twice: once declaratively in SwiftUI, once imperatively in UIKit.
 
 **Highlights**
-- Reusable custom SwiftUI views
-- Hand-built animation layer
-- Consistent, scalable layout system
-- Designed for drop-in use across projects
+- Identical components implemented in both SwiftUI and UIKit for direct comparison
+- Custom reusable button, card, and animated loading indicator
+- Consistent visual output across both frameworks
+- Notes on trade-offs between declarative and imperative approaches
 
-**Tech Stack:** SwiftUI, UIKit
-🔗 Repository: [`ios-swiftui-components`](./ios-swiftui-components)
+**Tech Stack:** SwiftUI, UIKit, Swift
+🔗 Repository: [`ios-ui-components`](./ios-ui-components)
 
 ### 6️⃣ Swift Concurrency Demo
 Swift concurrency in practice — async/await, actors, and structured task handling for real-world race conditions.
@@ -171,7 +171,9 @@ Platform API integrations — camera, location, and push notifications — with 
 ## Contact
 
 **Rashida Dalal**
+
 Senior iOS Developer
 
 - LinkedIn: https://www.linkedin.com/in/rashida-dalal-9b29a6164/
 - GitHub: https://github.com/Rashida99261
+- Email: rashida99261@gmail.com
