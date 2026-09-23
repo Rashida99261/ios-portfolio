@@ -117,16 +117,17 @@ Swift concurrency in practice — async/await, actors, and structured task handl
 **Tech Stack:** Swift Concurrency (async/await, Actors), Combine
 🔗 Repository: [`ios-concurrency-demo`](./ios-concurrency-demo)
 
-### 7️⃣ Local Persistence Layer
-A local data layer demo using SwiftData/Core Data with a clean caching and sync strategy.
+### 7️⃣ Core Data vs. SwiftData — Local Persistence Layer
+A side-by-side local persistence layer comparing Core Data and SwiftData — the same CRUD data model implemented under both frameworks, wrapped behind a shared repository interface.
 
 **Highlights**
-- Clean, testable persistence layer
-- Local caching strategy
-- Sync logic between local store and remote source
-- Performance-optimized read/write operations
+- Identical CRUD data model implemented with Core Data and with SwiftData
+- Repository pattern abstracting persistence from the rest of the app
+- In-memory caching layer with cache invalidation strategy
+- Offline-first design with simulated sync-on-reconnect
+- Schema migration notes for both frameworks
 
-**Tech Stack:** SwiftData, Core Data
+**Tech Stack:** Core Data, SwiftData, Repository Pattern
 🔗 Repository: [`ios-persistence-layer`](./ios-persistence-layer)
 
 ### 8️⃣ Testing Suite
