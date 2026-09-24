@@ -6,7 +6,7 @@ The focus is on clean architecture, modern Swift development, performance optimi
 
 ## About Me
 
-Senior iOS Developer with 8+ years of professional experience designing, developing, and maintaining high-quality iOS applications across Finance, Healthcare, and B2B domains.
+Senior iOS Developer with 10 years of professional experience designing, developing, and maintaining high-quality iOS applications across Finance, Healthcare, and B2B domains.
 
 Experienced in working with global teams, contributing to architecture decisions, optimizing performance, and delivering production-ready applications used at scale.
 
@@ -17,9 +17,10 @@ Experienced in working with global teams, contributing to architecture decisions
 - SwiftUI, UIKit, Combine
 - Core Data, Core Animation, AVFoundation
 - Grand Central Dispatch (GCD)
+- Swift Modern Concurrency
 
 **Architecture & Design**
-- MVVM, MVC
+- MVVM, MVC, TCA
 - Clean Architecture, SOLID principles
 - Modularization using Swift Package Manager (SPM)
 - Coordinator-based navigation patterns
@@ -29,6 +30,7 @@ Experienced in working with global teams, contributing to architecture decisions
 - URLSession, Alamofire
 - JSON parsing and error handling
 - Secure token handling and session management
+- Security & Encryption
 
 **Testing & Quality**
 - XCTest (Unit & UI Testing)
@@ -38,50 +40,13 @@ Experienced in working with global teams, contributing to architecture decisions
 
 **Tools & DevOps**
 - Xcode, Git
-- CI/CD (Bitrise, Jenkins, GitHub Actions)
+- CI/CD (FastLane, SonarQube, GitHub Actions)
 - Firebase, Firestore
 - JIRA, Confluence
-- SonarQube
 
-## Featured Projects
+## Featured Demo Work
 
-### 1️⃣ Modular Networking Layer (SPM)
-A reusable and testable networking layer built as a Swift Package.
-
-**Highlights**
-- Request/response abstraction
-- Centralized error handling
-- Decodable API models
-- Easily pluggable across multiple apps
-
-**Tech Stack:** Swift, Swift Package Manager, URLSession, Alamofire
-🔗 Repository:
-
-### 2️⃣ Authentication & Session Management (SwiftUI)
-A modern login/logout flow demonstrating secure authentication and state-driven navigation.
-
-**Highlights**
-- MVVM architecture
-- SwiftUI NavigationStack
-- Secure session handling
-- Clean separation of UI and business logic
-
-**Tech Stack:** SwiftUI, MVVM, Combine
-🔗 Repository:
-
-### 3️⃣ Local Persistence & User-Based Data Storage
-Demonstrates storing and managing user-specific data using Core Data.
-
-**Highlights**
-- User-scoped data handling
-- Clean Core Data stack
-- Login/logout data isolation
-- Performance-optimized fetch operations
-
-**Tech Stack:** Swift, Core Data, MVVM
-🔗 Repository:
-
-### 4️⃣ iOS Architecture Patterns
+### 1. iOS Architecture Patterns
 A modular demo comparing MVVM and Clean Architecture, with a testable layering approach from View through to Repository.
 
 **Highlights**
@@ -93,31 +58,37 @@ A modular demo comparing MVVM and Clean Architecture, with a testable layering a
 **Tech Stack:** Swift, MVVM, Clean Architecture, SPM
 🔗 Repository: [`ios-architecture-patterns`](./ios-architecture-patterns)
 
-### 5️⃣ SwiftUI &amp; UIKit Components Library
+
+### 2. SwiftUI & UIKit Components Library
+
 The same reusable UI components — a custom button, card view, and animated loading indicator — built twice: once declaratively in SwiftUI, once imperatively in UIKit.
 
-**Highlights**
-- Identical components implemented in both SwiftUI and UIKit for direct comparison
-- Custom reusable button, card, and animated loading indicator
-- Consistent visual output across both frameworks
-- Notes on trade-offs between declarative and imperative approaches
+Highlights
 
-**Tech Stack:** SwiftUI, UIKit, Swift
+Identical components implemented in both SwiftUI and UIKit for direct comparison
+Custom reusable button, card, and animated loading indicator
+Consistent visual output across both frameworks
+Notes on trade-offs between declarative and imperative approaches
+
+Tech Stack: SwiftUI, UIKit, Swift 
 🔗 Repository: [`ios-ui-components`](./ios-ui-components)
 
-### 6️⃣ Swift Concurrency Demo
-Swift concurrency in practice — async/await, actors, and structured task handling for real-world race conditions.
+### 3.  GCD vs. Modern Concurrency
 
-**Highlights**
-- Structured concurrency with async/await
-- Actor-based state isolation
-- Safe handling of shared mutable state
-- Practical examples of common concurrency pitfalls and fixes
+A side-by-side comparison of Grand Central Dispatch and Swift's modern concurrency model — the same tasks implemented with DispatchQueue/DispatchGroup and again with async/await and actors.
 
-**Tech Stack:** Swift Concurrency (async/await, Actors), Combine
+Highlights
+
+Identical tasks implemented with GCD and with async/await for direct comparison
+Actor-based isolation to eliminate data races on shared state
+Structured task cancellation and error propagation
+Notes on when GCD is still the right tool vs. when to reach for async/await
+
+Tech Stack: GCD, Swift Concurrency (async/await, Actors), Combine
 🔗 Repository: [`ios-concurrency-demo`](./ios-concurrency-demo)
+🔗 Repository: 
 
-### 7️⃣ Core Data vs. SwiftData — Local Persistence Layer
+### 4. Core Data vs. SwiftData — Local Persistence Layer
 A side-by-side local persistence layer comparing Core Data and SwiftData — the same CRUD data model implemented under both frameworks, wrapped behind a shared repository interface.
 
 **Highlights**
@@ -130,29 +101,33 @@ A side-by-side local persistence layer comparing Core Data and SwiftData — the
 **Tech Stack:** Core Data, SwiftData, Repository Pattern
 🔗 Repository: [`ios-persistence-layer`](./ios-persistence-layer)
 
-### 8️⃣ Testing Suite
-Unit and UI testing setup with a mocking strategy and a working CI pipeline.
+
+
+### 5. CI/CD Test Automation Pipeline
+A working CI/CD pipeline that runs unit and UI test cases automatically on every push, built with Fastlane for build/test automation.
 
 **Highlights**
+- Automated CI/CD pipeline running full test suite on every push
+- Fastlane-driven build, test, and reporting automation
 - Unit and UI test coverage with XCTest
-- Mocking strategy for network and persistence layers
-- Automated CI pipeline via GitHub Actions
-- Test-driven approach to feature development
+- Mocking strategy for network and persistence dependencies
 
-**Tech Stack:** XCTest, GitHub Actions
-🔗 Repository: [`ios-testing-suite`](./ios-testing-suite)
+**Tech Stack:** XCTest, Fastlane, CI/CD
+🔗 Repository: [`ios-testing-demo`](./ios-testing-demo)
 
-### 9️⃣ Native Capabilities Integration
-Platform API integrations — camera, location, and push notifications — with proper permission handling.
+
+### 6. Modular Networking Layer (SPM)
+A reusable and testable networking layer built as a Swift Package.
 
 **Highlights**
-- Camera and media capture integration
-- Location services with proper authorization flow
-- Push notification handling (local and remote)
-- Clean, reusable permission-request patterns
+- Request/response abstraction
+- Centralized error handling
+- Decodable API models
+- Easily pluggable across multiple apps
 
-**Tech Stack:** AVFoundation, CoreLocation, UserNotifications
-🔗 Repository: [`ios-native-capabilities`](./ios-native-capabilities)
+**Tech Stack:** Swift, Swift Package Manager, URLSession, Alamofire
+🔗 Repository: [`NetworkKit`](./NetworkKit)
+
 
 ## Key Engineering Practices
 
